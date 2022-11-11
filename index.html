@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body> 
+
+    <header>
+        <div class="header-bar">
+            <div class="logo"> 
+                <img src="/images/dm-logo2.jpg" alt="logo">
+            </div>
+            <div class="menu">
+                <button class="menu-button">Menu</button>
+                <div class="nav-bar">
+                    <a href="#" class="nav-link">Porfolio</a>
+                    <a href="#" class="nav-link">Skills</a>
+                    <a href="#" class="nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-text">
+            <div><h1>Michael Scott</h1>
+            <h2 class="subtitle">El mejor jefe del mundo</h2></div>
+       
+        </div> 
+    </header>
+     
+     <main>
+        <section>
+            <div>
+                <h3>Skills</h3>
+                    <p>BARRAS DE PROGRESO</p>
+                <!--BARRAS DE PROGRESO ANIMADAS-->
+            </div>
+            <div>
+                <h3>Proyectos</h3>
+                <ul>
+                    <li type="disc">Threat Level Midnight: La Película</li>
+                    <li type="disc">Creación de la Comisión de Fiestas</li>
+                    <li type="disc">Noche de casino</li>
+                    <li type="disc">Plan de Prevención de Riesgos Laborales</li>
+                    <li type="disc">Videoclip: Let's get ethical</li>
+                    <li type="disc">Plan para acabar con Toby</li>
+                </ul>
+            </div>  
+        </section>  
+        
+        <section>
+            <form action="registro-completado.html" method="post">
+                <h3>Contacto</h3>
+                <div>
+                <label for="name">Nombre</label>
+                <input required id="name" name="name" type="text" placeholder="Nombre">
+                </div>
+                
+                <div>
+                    <label for="surname">Apellidos</label>
+                    <input required id="surname" name="surname" type="text" placeholder="Apellidos">
+                </div>
+            
+                <div>
+                    <label for="phone">Teléfono</label>
+                    <input required id="phone" name="phone" type="tel" pattern="[0-9]+" placeholder="Teléfono">
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>¿Cómo me conociste?</legend>
+                        
+                        <label for="uni">Universidad</label>
+                        <input required id="uni" type="radio" name="option" value="Universidad">
+        
+                        <label for="kickoff">Keepcoding Kick-off</label>
+                        <input required id="kickoff" type="radio" name="option" value="Keepcoding">
+                        
+                        <label for="cole">Colegio</label>
+                        <input  required id="cole" type="radio" name="option" value="Colegio">
+        
+                        <label for="github">GitHub</label>
+                        <input  required id="github" type="radio" name="option" value="GitHub">
+                    </fieldset>
+                    
+                </div>
+                <div>
+                    <label for="githubtag">GitHub username</label>
+                    <input id="githubtag" name="githubtag" type="text" pattern="^@[^\s]+" placeholder="@username">
+                </div>
+            
+                <div>
+                    <label for="descripcion">Descripción</label>  
+                    <textarea required id="descripcion" name="descripcion" placeholder="Escribe tu mensaje" maxlength="180"> </textarea>
+                </div>
+
+                <input class="send" type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav>
+          <a class="link" href="https://twitter.com/da_michaelscott" target="_blank" method="post">Twitter</a>
+          <a class="link" href="https://www.facebook.com/profile.php?id=100084333167265" target="_blank" method="post">Facebook</a>
+          <a class="link" href="https://www.instagram.com/michaelscottdaily/" target="_blank" method="post">Instagram</a>
+        </nav>
+    </footer>
+
+</body>
+</html>
