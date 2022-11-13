@@ -17,10 +17,13 @@
                 <img src="/images/dm-logo2.jpg" alt="logo">
             </div>
             <div class="navbar-menu">
-                <a href="#" class="nav-link">Porfolio</a>
-                <a href="#" class="nav-link">Skills</a>
-                <a href="#" class="nav-link">Contacto</a>
-            </div>
+                <button class="menu-button">Menu</button>
+                <div class="menu-content">
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#proyectos" class="nav-link">Proyectos</a>
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </div>
+            </div>  
         </div>
         <div class="header-text">
             <div><h1>Michael Scott</h1>
@@ -31,29 +34,94 @@
      
      <main>
         <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur quam quo optio dolor. Iste unde doloremque quisquam voluptate quas, aspernatur dolore, rerum itaque, modi porro enim consequuntur natus consequatur temporibus!</p>
+            <section class="intro">
+                <p>¡Buen día señores, señoras y señoritas!</p> 
+                <p> Mi nombre es Michael Scott y ahora mismo soy Director Regional en una de las mejores empresas papeleras de Pennsylvania: ¡Dunder Mifflin! 
+                    Pero quién sabe, quizás mañana me puede apetecer trabajar contigo.
+                <p> Datos curiosos sobre mí: </p>
+                <ul>
+                        <li type="square">¿Preferiría ser temido o amado? Fácil. Ambos. Quiero que la gente tenga miedo de cuánto me aman.</li>
+                        <li type="square">Una vez salvé una vida. La mía. ¿Soy un héroe? Realmente no puedo decir, pero sí.</li>
+                        <li type="square">Me encantan los chistes internos. Me encantaría ser parte de uno algún día.</li>
+                        <li type="square">¿Tengo alguien especial? Bueno, sí, por supuesto. Un montón de ellos. Mis empleados.</li>
+                </ul>
+                </p>
+            </section>
             <hr>
             <section>
-                <div>
+                <a name="skills"></a>
+                <div class="skills-box">
                     <h3>Skills</h3>
-                        <p>BARRAS DE PROGRESO</p>
-                    <!--BARRAS DE PROGRESO ANIMADAS-->
+                    <div class="skills "> 
+                        <div class="details">
+                            <span>Buen rollito</span>
+                            <span>97%</span>
+                        </div>
+
+                        <div class="menu">
+                            <div id="buen-roll"></div>
+                        </div>   
+                    </div>
+
+                    <div class="skills "> 
+                        <div class="details">
+                            <span>Talento musical</span>
+                            <span>56%</span>
+                        </div>
+                        <div class="menu">
+                            <div id="music"></div>
+                        </div> 
+                    </div>
+
+                    <div class="skills "> 
+                        <div class="details">
+                            <span>Ventas</span>
+                            <span>94%</span>
+                        </div>
+
+                        <div class="menu">
+                            <div id="ventas"></div>
+                        </div> 
+                    </div>
+                    
+                    <div class="skills "> 
+                        <div class="details">
+                            <span>Dirección de cine</span>
+                            <span>70%</span>
+                        </div>
+
+                        <div class="menu">
+                            <div id="cine"></div>
+                        </div> 
+                    </div>
+                                        
+                    <div class="skills "> 
+                        <div class="details">
+                            <span>Lealtad</span>
+                            <span>100%</span>
+                        </div>
+
+                        <div class="menu">
+                            <div id="leal"></div>
+                        </div> 
+                    </div>
                 </div>
                 <hr>
                 <div>
+                    <a name="proyectos"></a>
                     <h3>Proyectos</h3>
-                    <ul>
-                        <li type="disc">Threat Level Midnight: La Película</li>
-                        <li type="disc">Creación de la Comisión de Fiestas</li>
-                        <li type="disc">Noche de casino</li>
-                        <li type="disc">Plan de Prevención de Riesgos Laborales</li>
-                        <li type="disc">Videoclip: Let's get ethical</li>
-                        <li type="disc">Plan para acabar con Toby</li>
+                    <ul class="projects">
+                        <li>Threat Level Midnight: La Película</li>
+                        <li>Creación de la Comisión de Fiestas</li>
+                        <li>Noche de casino</li>
+                        <li>Plan de Prevención de Riesgos Laborales</li>
+                        <li>Videoclip: Let's get ethical</li>
                     </ul>
                 </div>  
             </section>  
             <hr>
             <section>
+                <a name="contacto"></a>
                 <form action="registro-completado.html" method="post">
                     <h3>Contacto</h3>
                     <div>
@@ -71,20 +139,20 @@
                         <input required id="phone" name="phone" type="tel" pattern="[0-9]+" placeholder="Teléfono">
                     </div>
                     <div>
-                        <fieldset>
+                        <fieldset class="fieldset">
                             <legend>¿Cómo me conociste?</legend>
-                            
+
                             <label for="uni">Universidad</label>
-                            <input required id="uni" type="radio" name="option" value="Universidad">
+                            <input required id="uni" type="radio" name="option" value="Universidad" >
             
                             <label for="kickoff">Keepcoding Kick-off</label>
-                            <input required id="kickoff" type="radio" name="option" value="Keepcoding">
+                            <input required id="kickoff" type="radio" name="option" value="Keepcoding" >
                             
                             <label for="cole">Colegio</label>
-                            <input  required id="cole" type="radio" name="option" value="Colegio">
+                            <input  required id="cole" type="radio" name="option" value="Colegio" >
             
                             <label for="github">GitHub</label>
-                            <input  required id="github" type="radio" name="option" value="GitHub">
+                            <input  required id="github" type="radio" name="option" value="GitHub" >
                         </fieldset>
                         
                     </div>
@@ -97,7 +165,7 @@
                         <label for="desc">Descripción</label>  
                         <textarea required id="desc" name="descripcion" placeholder="Escribe tu mensaje" maxlength="180"> </textarea>
                     </div>
-
+                    
                     <input class="send" type="submit" value="Enviar">
                 </form>
             </section>
